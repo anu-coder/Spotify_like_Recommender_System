@@ -14,11 +14,47 @@ Music recommender systems (MRS) have recently exploded in popularity. Thanks to 
 3. __Content Based Filtering:__ The actual content of item refers to the actual characteristics of an item and these attributes are broken down into ‘tags’ and items are then matched to user preferences (as modelled by the tags) accordingly.
 
 <p align = "center">
-<img src = "https://github.com/anu-coder/Recommender_System/blob/master/Recommander%20types.PNG">
+<img src = "https://github.com/anu-coder/Recommender_System/blob/master/images/types.png">
 </p>
 
 ### Dataset used: [Millionsongdataset](http://millionsongdataset.com/)
 
 * We have used a part of the dataset containing a subset of 2 Million songs which is also available in the above website.
 * Necessary citation : [Bertin-Mahieux2011, ISMIR](http://www.columbia.edu/~tb2332/Papers/ismir11.pdf)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# STEPS and OUTPUTS:
+
+## A glimpse into the dataset: 
+
+Among the 2M songs we have taken a subset of 10K songs, due to the hardware constraint of my system.
+The dataset consists of five rows: __user_id, song_id, listen count, title, release, artistname, year, song.__
+
+<p align = "left">
+<img src = "https://github.com/anu-coder/Recommender_System/blob/master/images/Datasetglance.PNG">
+</p>
+
+## Type 1: Popularity based recommender
+
+Popularity based recommander system is often known as the __cold start__ or __non personalised recommandation__. In this particular type, all the users are recommanded the set of songs which are most popular throughout the system. The determining criterion can be the highest number of views of the song. This is the easiest to implement, and doesnot require to explore other dependencies. It is important to undertsand that this recommendadtion is mainly targetted to the new users, when they havenot listened to any songs yet. so this reccomendation, recommends the same set of songs to all the user. 
+
+There are __365__ distinct user, and __5151__ distinct songs in the 10K dataset we have used. 
+Here is the popularity based recommendation to the __364th__ user. 
+
+<p align = "left">
+<img src = "https://github.com/anu-coder/Recommender_System/blob/master/images/popularitybasedreco.PNG">
+</p>
+
+## Type 2: Item similarity based personalised recommander
+
+This is also known as the __Collaborative Filtering__ which is based on similarity between items. 
+It first trains the model with respect to the views of the particular user, and then recommends similar items to the user, depending on their choices. Unlike popularity based recommendation, the moment the user starts listening to song, item similarity based recommandation is implimentated. 
+
+<p align = "left">
+<img src = "https://github.com/anu-coder/Recommender_System/blob/master/images/Item%20similaritybasedreco.PNG">
+</p>
+
+
 
