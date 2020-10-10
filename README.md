@@ -77,5 +77,6 @@ Note: We have derigned our engine using a borrowed module called Recommender fro
 * References: 
 * [How Does Spotify Know You So Well?](https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe)
 * [Datacamp tutorial](https://www.datacamp.com/community/tutorials/recommender-systems-python)
+* [Recommander system spotify](https://github.com/anu-coder/Spotify_like_Recommender_System/blob/master/Recommander%20system_sportify.pdf)
 
 
